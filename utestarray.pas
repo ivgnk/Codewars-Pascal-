@@ -33,8 +33,8 @@ begin
    writeln('Low =',Low(dat_));
    writeln('High =',High(dat_));        writeln;
    n:=2;
-   // задание исходных данных
-   Writeln('задание исходных данных');
+   // init ini data
+   Writeln('init ini data');
    For i:= Low(dat_) to High(dat_) do
        begin
         SetLength(dat_[i],2);
