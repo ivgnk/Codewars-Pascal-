@@ -3,13 +3,13 @@ program Irreducible_Sum_of_Rationals;
 {$APPTYPE CONSOLE}
 
 {$R *.res}
-// У вас будет список рациональных чисел в форме
-// lst = [[numer_1, denom_1] , ... , [numer_n, denom_n] ] ,
-// где все числа являются целыми положительными числами.
-// Надо вывести их сумму N/D в неприводимом виде:
-// это означает, что N и D имеют только 1 в качестве общего делителя.
-// [ [1, 2], [1, 3], [1, 4] ]  -->  [13, 12]
-// 1/2  +  1/3  +  1/4     =      13/12
+// You will have a list of rational numbers in the form
+// // lst = [[numer_1, denom_1] , ... , [numer_n, denom_n] ] ,
+// where all numbers are positive integers.
+// It is necessary to output their sum N/D in irreducible form:
+// this means that N and D have only 1 as a common divisor.
+// [ [1, 2], [1, 3], [1, 4] ] --> [13, 12]
+// 1/2 + 1/3 + 1/4 = 13/12
 uses
   utestarray,
   System.SysUtils;
@@ -110,9 +110,8 @@ end;
 
 begin
    dat_:= test_arr6;
-   // проверка задания исходных данных
+   // checking the source data assignment
    write2DArray(dat_);
-   // непосредственно работа
    res_:=SumFracts(dat_);
    Writeln('Ответ = ', res_[0],' ',res_[1]);
    readln;
