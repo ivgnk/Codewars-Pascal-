@@ -1,0 +1,2 @@
+# Codewars-Pascal-
+Codewars (Pascal)
